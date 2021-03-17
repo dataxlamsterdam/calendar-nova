@@ -1,5 +1,5 @@
 {
-    "name": "czemu/nova-calendar-tool",
+    "name": "dataxlamsterdan/calendar-nova",
     "description": "Calendar tool for Laravel Nova.",
     "keywords": [
         "laravel",
@@ -9,8 +9,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Paweł Dymek",
-            "email": "pawel.dymek@gmail.com",
+            "name": "Tim de Kok",
+            "email": "tim@dataxl.nl",
             "homepage": "https://paweldymek.com/"
         }
     ],
@@ -20,13 +20,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Czemu\\NovaCalendarTool\\": "src/"
+            "Dataxl\\NovaCalendarTool\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Czemu\\NovaCalendarTool\\ToolServiceProvider"
+                "Dataxl\\NovaCalendarTool\\ToolServiceProvider"
             ]
         }
     },
