@@ -1,0 +1,38 @@
+{
+    "name": "czemu/nova-calendar-tool",
+    "description": "Calendar tool for Laravel Nova.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "calendar"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paweł Dymek",
+            "email": "pawel.dymek@gmail.com",
+            "homepage": "https://paweldymek.com/"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "spatie/laravel-google-calendar": "^3.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Czemu\\NovaCalendarTool\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Czemu\\NovaCalendarTool\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
