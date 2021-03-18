@@ -4,6 +4,7 @@ namespace Dataxl\NovaCalendarTool\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Validator;
+use App\User;
 
 class Event extends Model
 {
@@ -45,5 +46,15 @@ class Event extends Model
         }
 
         return $query;
+    }
+
+    public function users()
+    {
+	    return $this->belongsToMany(
+		    User::class,
+		    'event_user',
+		    'event_id',
+		    'user_id'
+	    );
     }
 }
