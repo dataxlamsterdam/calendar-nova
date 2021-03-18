@@ -10,6 +10,8 @@ class EventsController
     public function index(Request $request)
     {
         $events = Event::filter($request->query())
+	        ->leftJoin('event_user', 'event_user.event_id', '=', 'events.id')
+	        ->where('event_user.user_id', auth()->user()->id)
             ->get(['id', 'title', 'start', 'end'])
             ->toJson();
 
